@@ -13,7 +13,7 @@ To start the project, you'll need to have Docker installed on your machine. Here
 
 ### Installation with Docker (recommended)
 1. Create a folder where you want to store the project
-2. Create a `docker-compose.yaml` file with the content from `docker-compose.yaml`
+2. Create a `docker-compose.yaml` file with the content from `docker-compose.yaml` or download it
 ```bash
 wget https://raw.githubusercontent.com/TINF23B6/Vereinskalender/main/docker-compose.yaml
 ```
