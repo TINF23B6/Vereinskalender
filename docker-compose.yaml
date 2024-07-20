@@ -1,7 +1,7 @@
 services:
     vereinskalender:
         container_name: vereinskalender-app
-        image: ghcr.io/tinf23b6/vereinskalender:latest
+        image: verein-cal:dev
         build:
             context: .
             dockerfile: .docker/Dockerfile
@@ -26,6 +26,12 @@ services:
             MYSQL_USER: verein
             MYSQL_PASSWORD: verein
             TZ: Europe/Berlin
+        healthcheck:
+            test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+            start_period: 10s
+            interval: 10s
+            timeout: 5s
+            retries: 3
         volumes:
             - ./mysql:/var/lib/mysql
         restart: unless-stopped
