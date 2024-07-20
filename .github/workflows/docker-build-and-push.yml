@@ -1,4 +1,3 @@
-
 name: Docker Build and Push
 
 on:
@@ -9,9 +8,6 @@ on:
 jobs:
     build_and_push:
         runs-on: ubuntu-latest
-        permissions:
-          contents: read
-          packages: write
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
@@ -27,5 +23,5 @@ jobs:
               uses: docker/build-push-action@v6
               with:
                   push: true
-                  file: .docker/Dockerfile
+                  file: docker/Dockerfile
                   tags: ghcr.io/tinf23b6/vereinskalender:latest
