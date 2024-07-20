@@ -1,0 +1,1375 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #333;
+}
+
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="checkbox"],
+textarea {
+  font-size: 1em;
+  font-family: Inter;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"] {
+  appearance: none;
+}
+
+.layout-body {
+  height: 100vh;
+
+  display: grid;
+  grid:
+    "header" auto 
+    "main" 1fr 
+    "footer" auto 
+    / 1fr;
+  gap: 0.5em;
+}
+
+.header {
+  grid-area: header;
+
+  width: 100%;
+
+}
+
+.user-management,
+.new-event { 
+  float: left;
+}
+
+.user-management { 
+  float: left;
+}
+
+.login-logout-btn { 
+  float: right;
+}
+
+
+.footer {
+  grid-area: footer;
+
+  align-self: baseline;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid:
+    "option-bar" 2.75em "content" 1fr / 1fr;
+  gap: 0.5em;
+}
+
+.content {
+  grid-area: content;
+
+  height: 100%;
+  margin-left: 1em;
+
+  display: grid;
+  grid:
+    "content-calendar points-table" 1fr 
+    / 1fr auto;
+  gap: 1em;
+}
+
+.points-table {
+  grid-area: points-table;
+
+  display: grid;
+  grid:
+    "points-table-head-bar" auto "points-table-content" 1fr / auto;
+}
+
+.points-table-head-bar {
+  grid-area: points-table-head-bar;
+
+  height: 2.75em;
+  width: 3em;
+  border-radius: 100em 0 0 100em;
+  margin-top: 1em;
+
+  background: #d9d9d9;
+
+  text-align: left;
+  align-content: center;
+
+  display: grid;
+  grid:
+    "points-table-btn points-table-title" 1fr / auto 1fr;
+}
+
+.points-table-head-bar.big {
+  width: auto;
+  margin-top: 0;
+  border-radius: 1em 0 0 0;
+}
+
+.points-table-btn {
+  grid-area: points-table-btn;
+}
+
+.points-table-title {
+  grid-area: points-table-title;
+
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: none;
+  border: none;
+  align-content: center;
+
+  margin-right: 2em;
+}
+
+.points-table-content {
+  grid-area: points-table-content;
+
+  background-color: #a3a3a3;
+
+  border-radius: 0 0 0 1em;
+  padding: 0.4em 0.7em 0.4em 0.5em;
+
+  max-width: 30em;
+  max-height: 27.02222222222222222222222222222em;
+  overflow-y: auto;
+}
+
+.points-table-content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.points-table-content table,
+.points-table-content th,
+.points-table-content td {
+
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.95em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  border: 0;
+  margin: 0;
+}
+
+.points-table-content table {
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+
+.points-table-content th {
+  padding: 0 0.5em 0.25em 0.5em;
+  text-align: right;
+}
+
+.points-table-content td {
+  padding: 0.3em 0.5em 0 0.5em;
+  text-align: right;
+}
+
+.points-table-content .club-name {
+  text-align: left;
+}
+
+.points-table-content .club-name.our-club {
+  color: #d16410;
+}
+
+.option-bar {
+  grid-area: option-bar;
+
+  height: 2.75em;
+  border-radius: 100em;
+  margin-left: 1em;
+  margin-right: 2em;
+
+  background: #C9C9C9;
+  align-content: center;
+
+  display: grid;
+  grid:
+    "option-bar-0 . option-bar-1 option-bar-2 option-bar-3" auto / auto 1fr auto auto auto;
+}
+
+.option-bar-0 {
+  grid-area: option-bar-0;
+}
+
+.option-bar-1 {
+  grid-area: option-bar-1;
+}
+
+.option-bar-2 {
+  grid-area: option-bar-2;
+}
+
+.option-bar-3 {
+  grid-area: option-bar-3;
+}
+
+.option-bar-0 {
+  text-align: left;
+}
+
+.option-bar-1,
+.option-bar-2,
+.option-bar-3 {
+  text-align: right;
+}
+
+.user-management-btn,
+.new-event-btn,
+.logout-btn,
+.login-btn {
+  height: 1.5em;
+  width: auto;
+  background-color: #E8E8E8;
+  border-radius: 200em;
+  color: black;
+  border: none;
+  margin: 0.5em 0.5em 0 0.5em;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  float: right;
+  align-content: center;
+}
+
+
+.points-table-btn,
+.home-btn {
+  height: 2em;
+  width: 2em;
+  border-radius: 200em;
+  margin-left: 0.375em;
+  background: #FFF;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+}
+
+.points-table-btn {
+  margin-top: 0.375em;
+  margin-right: 0.375em;
+}
+
+.option-view-btn,
+.date-btn,
+.arrows-btn {
+  height: 2em;
+  width: auto;
+  border-radius: 200em;
+  margin-right: 2em;
+
+  background: #FFF;
+  display: inline-block;
+  align-content: center;
+  text-wrap: nowrap;
+}
+
+.date-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.points-table-btn button,
+.home-btn button {
+  height: 2em;
+  width: 2em;
+  border-radius: 200em;
+}
+
+.option-view-btn button{
+  height: 2em;
+  width: 5.6em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.user-management-btn button,
+.new-event-btn button,
+.logout-btn button,
+.login-btn button {
+  height: 1.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 200em;
+  align-content: center;
+}
+
+.date-btn button {
+  border-radius: 200em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  height: 2em;
+  width: 11em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  display: flex;
+  align-items: center;  
+
+  align-content: center;
+}
+
+.date-btn button .month {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date-btn button .year {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+.arrows-btn button {
+  height: 2em;
+  width: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.option-view-btn .left,
+.arrows-btn .left {
+  border-radius: 200em 0 0 200em;
+  padding-left: 1.5em;
+}
+
+.option-view-btn .right,
+.arrows-btn .right {
+  border-radius: 0 200em 200em 0;
+  padding-right: 1.5em;
+}
+
+.user-management-btn button:hover,
+.new-event-btn button:hover,
+.logout-btn button:hover,
+.login-btn button:hover,
+.points-table-btn button:hover,
+.home-btn button:hover,
+.option-view-btn button:hover,
+.date-btn button:hover,
+.arrows-btn button:hover {
+  cursor: pointer;
+  background-color: #999;
+}
+
+.arrows-btn {
+  margin-right: 4em;
+}
+
+.user-management-btn button,
+.event_popup .popup .edit-btn input,
+.edit-event-form,
+.new-event-form-club-events,
+.new-event-form-match,
+.new-event-btns button,
+.new-event-btn button,
+.logout_form .yes-btn input,
+.logout_form button,
+.logout-btn button,
+.login-btn button,
+.points-table-btn button,
+.home-btn button,
+.option-view-btn button,
+.date-btn button,
+.arrows-btn button,
+.month_btns button,
+.year_input button,
+.year_input input{
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: none;
+  border: none;
+}
+
+.option-view-btn button {
+  color: #818181;
+}
+
+.option-view-btn .current {
+  color: #000;
+}
+
+.points-table-btn button {
+  background-image: url(../img/bar-chart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.25em 1.25em;
+}
+
+.home-btn button {
+  background-image: url(../img/home-img.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.3em 1.3em;
+}
+
+.arrows-btn button.left {
+  background-image: url(../img/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.556em 0.8em;
+}
+
+.arrows-btn button.today {
+  background-image: url(../img/calendar-today.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.25em 1.25em;
+}
+
+.arrows-btn button.right {
+  background-image: url(../img/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.556em 0.8em;
+}
+
+.invert-horizontally {
+  transform: rotate(180deg);
+}
+
+.date-btn:hover .dropdown-content {
+  display: grid;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0 0 0 100vmax #33333366;
+  z-index: 500;
+  align-self: center;
+  margin-top: 2em;
+
+  border-radius: 1em;
+  background-color: #FFF;
+
+  grid:
+    "month_btns year_input" auto / auto auto;
+}
+
+.year_input {
+  grid-area: year_input;
+
+
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: auto;
+
+  align-content: center;
+  text-align: center;
+}
+
+.month_btns {
+  grid-area: month_btns;
+  z-index: inherit;
+
+  margin: 0.3em;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25em;
+}
+
+.month_btns button,
+.year_input input,
+.year_input button {
+  z-index: inherit;
+  height: 2em;
+
+  font-size: 0.85em;
+  background-color: #C9C9C9;
+  padding-left: 0.425em;
+  padding-right: 0.425em;
+}
+
+.month_btns button{
+  width: auto;
+  justify-content: center;
+}
+
+.year_input input[type="number"]::-webkit-inner-spin-button,
+.year_input input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.year_input input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+.year_input input,
+.year_input button {
+  width: 5em;
+  border-radius: 200em;
+
+  margin: 0.3em;
+  padding: 0.2em 0;
+}
+
+.year_input button {
+  background: none;
+}
+
+.year_input input:focus {
+  outline: none;
+  background-color: #999;
+}
+
+.year_input input:hover {
+  background-color: #999;
+}
+
+.year_input button.up {
+  background-image: url(../img/arrow-up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1em 1em;
+}
+
+.year_input button.down {
+  background-image: url(../img/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1em 1em;
+}
+
+.drop-btn-year {  
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn-structure {
+  display: grid;
+  grid:
+    "input submit" 1fr
+    / auto auto;
+}
+
+.submit-btn-structure .input { 
+  grid-area: input; 
+}
+.submit-btn-structure .submit { 
+  grid-area: submit;
+}
+
+.submit-btn-structure .submit button {
+  margin: 4.7em 0.3em 0.3em 0;
+  width: 2.5em !important;
+  height: 1.7em;
+
+  background-color: #C9C9C9;
+
+  background-image: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.5em 1.5em;
+}
+
+.submit-btn-structure .submit button:hover {
+  background-color: #999999;
+}
+
+.new-event-form {
+  display: grid;
+  grid:
+    "new-event-btns-area" auto
+    "new-event-form-content" 1fr
+    / auto;
+
+}
+
+.new-event-btns-area {
+  grid-area: new-event-btns-area;
+}
+
+.new-event-btns { 
+  display: inline-flex;
+  margin-top: 0.5em;
+  width: auto;
+  
+  background-color: #FFF;
+  height: 2em;
+  border-radius: 200em;
+  align-content: center;
+
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.new-event-btns button {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  height: 2em;
+}
+
+.new-event-btns button:hover {
+  background-color: #BBB;
+  cursor: pointer;
+}
+
+.new-event-btns button.left {
+  border-radius: 200em 0 0 200em;
+  background-color: #DDD;
+}
+
+.new-event-btns button.right {
+  border-radius: 0 200em 200em 0;
+  background-color: #FFF;
+}
+
+.new-event-form-content { 
+  grid-area: new-event-form-content; 
+}
+
+.new-event-form-match {
+  width: max-content;
+  display: grid;
+  grid:
+    "name name-input" auto
+    "date-warning date-warning" auto
+    "date date-input" auto
+    "time-warning time-warning" auto
+    "time-period time-period-input" auto
+    "place place-input" auto
+    "type type-input" auto
+    "clubs clubs-input" auto
+    "points points-input" auto
+    "info-text info-text-input" auto
+    "notice notice-input" auto
+    "incomplete-warning incomplete-warning" auto
+    "submit-btn submit-btn" auto
+    / auto auto;
+
+  text-align: left;
+
+  margin: 0.5em;
+}
+
+.new-event-form-match .date-warning { grid-area: date-warning; margin-top: 0.5em; }
+.new-event-form-match .time-warning { grid-area: time-warning; margin-top: 0.5em; }
+.new-event-form-match .name { grid-area: name; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-match .name-input { grid-area: name-input; margin-top: 0.5em; }
+.new-event-form-match .date { grid-area: date; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-match .date-input { grid-area: date-input; margin-top: 0.5em; }
+.new-event-form-match .time-period { grid-area: time-period; margin-top: 0.5em; padding-top: 0.1em; margin-right: 0.5em;}
+.new-event-form-match .time-period-input { grid-area: time-period-input; margin-top: 0.5em; }
+.new-event-form-match .place { grid-area: place; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-match .place-input { grid-area: place-input; margin-top: 0.5em; }
+.new-event-form-match .type { grid-area: type; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-match .type-input { grid-area: type-input; margin-top: 0.5em; }
+.new-event-form-match .clubs { grid-area: clubs; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-match .clubs-input { grid-area: clubs-input; margin-top: 0.5em; }
+.new-event-form-match .points { grid-area: points; margin-top: 0.5em; margin-right: 0.5em; padding-top: 0.1em; }
+.new-event-form-match .points-input { grid-area: points-input; margin-top: 0.5em; }
+.new-event-form-match .info-text { grid-area: info-text; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-match .info-text-input { grid-area: info-text-input; margin-top: 0.5em; }
+.new-event-form-match .notice { grid-area: notice; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-match .notice-input { grid-area: notice-input; margin-top: 0.5em; }
+.new-event-form-match .submit-btn { 
+  grid-area: submit-btn; 
+
+  width: 100%;
+  margin-top: 0.5em; 
+}
+.new-event-form-match .incomplete-warning { 
+  grid-area: incomplete-warning; 
+  margin-top: 0.5em; 
+
+  text-align: center;
+  display: none;
+}
+
+
+.new-event-form-match .date-warning,
+.new-event-form-match .time-warning {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.new-event-form-match .submit-btn input {
+  float: right;
+  height: 2em;
+  width: 2em;
+  background-color: #FFF;
+  border-radius: 200em;
+  border: none;
+
+  background-image: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.5em 1.5em;
+}
+
+.new-event-form-match .submit-btn input:hover {
+  background-color: #BBB;
+  cursor: pointer;
+}
+
+.new-event-form-match .textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  resize: none; 
+  overflow-y: auto; 
+}
+
+.new-event-form-match input[type="text"],
+.new-event-form-match input[type="number"],
+.new-event-form-match textarea {
+  border-radius: 0.25em;
+  border: none;
+  padding: 0.3em 0.4em 0.3em 0.4em;
+}
+
+.new-event-form-club-events {
+  width: max-content;
+
+  display: grid;
+  grid:
+    "name name-input" auto
+    "date-warning date-warning" auto
+    "date date-input" auto
+    "time-warning time-warning" auto
+    "time-period time-period-input" auto
+    "place place-input" auto
+    "type type-input" auto
+    "info-text info-text-input" auto
+    "notice notice-input" auto
+    "incomplete-warning incomplete-warning" auto
+    "submit-btn submit-btn" auto
+    / auto auto;
+
+  text-align: left;
+
+  margin: 0.5em;
+}
+
+.new-event-form-club-events .date-warning { grid-area: date-warning; margin-top: 0.5em; }
+.new-event-form-club-events .time-warning { grid-area: time-warning; margin-top: 0.5em; }
+.new-event-form-club-events .name { grid-area: name; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-club-events .name-input { grid-area: name-input; margin-top: 0.5em; }
+.new-event-form-club-events .date { grid-area: date; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-club-events .date-input { grid-area: date-input; margin-top: 0.5em; }
+.new-event-form-club-events .time-period { grid-area: time-period; margin-top: 0.5em; margin-right: 0.5em; padding-top: 0.1em; }
+.new-event-form-club-events .time-period-input { grid-area: time-period-input; margin-top: 0.5em; }
+.new-event-form-club-events .place { grid-area: place; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-club-events .place-input { grid-area: place-input; margin-top: 0.5em; }
+.new-event-form-club-events .type { grid-area: type; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-club-events .type-input { grid-area: type-input; margin-top: 0.5em; }
+.new-event-form-club-events .info-text { grid-area: info-text; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-club-events .info-text-input { grid-area: info-text-input; margin-top: 0.5em; }
+.new-event-form-club-events .notice { grid-area: notice; margin-top: 0.5em; padding-top: 0.1em; }
+.new-event-form-club-events .notice-input { grid-area: notice-input; margin-top: 0.5em; }
+.new-event-form-club-events .submit-btn { 
+  grid-area: submit-btn; 
+
+  width: 100%;
+  margin-top: 0.5em; 
+}
+.new-event-form-club-events .incomplete-warning { 
+  grid-area: incomplete-warning; 
+  margin-top: 0.5em; 
+
+  text-align: center;
+  display: none;
+}
+
+.new-event-form-club-events .date-warning,
+.new-event-form-club-events .time-warning {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.new-event-form-club-events .submit-btn input {
+  float: right;
+  height: 2em;
+  width: 2em;
+  background-color: #FFF;
+  border-radius: 200em;
+  border: none;
+
+  background-image: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.5em 1.5em;
+}
+
+.new-event-form-club-events .submit-btn input:hover {
+  background-color: #BBB;
+  cursor: pointer;
+}
+
+.new-event-form-club-events .textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  resize: none; 
+  overflow-y: auto; 
+}
+
+.new-event-form-club-events input[type="text"],
+.new-event-form-club-events input[type="number"],
+.new-event-form-club-events textarea {
+  border-radius: 0.25em;
+  border: none;
+  padding: 0.3em 0.4em 0.3em 0.4em;
+}
+
+.edit-event-form {
+  width: max-content;
+  
+  display: grid;
+  grid:
+    "name name-input" auto
+    "date-warning date-warning" auto
+    "date date-input" auto
+    "time-warning time-warning" auto
+    "time-period time-period-input" auto
+    "place place-input" auto
+    "type type-input" auto
+    "clubs clubs-input" auto
+    "points points-input" auto
+    "info-text info-text-input" auto
+    "notice notice-input" auto
+    "incomplete-warning incomplete-warning" auto
+    "submit-btn submit-btn" auto
+    / auto auto;
+
+  text-align: left;
+
+  margin: 0.5em;
+}
+
+.edit-event-form .date-warning { grid-area: date-warning; margin-top: 0.5em; }
+.edit-event-form .time-warning { grid-area: time-warning; margin-top: 0.5em; }
+.edit-event-form .name { grid-area: name; margin-top: 0.5em; padding-top: 0.1em; }
+.edit-event-form .name-input { grid-area: name-input; margin-top: 0.5em; }
+.edit-event-form .date { grid-area: date; margin-top: 0.5em; padding-top: 0.1em; }
+.edit-event-form .date-input { grid-area: date-input; margin-top: 0.5em; }
+.edit-event-form .time-period { grid-area: time-period; margin-top: 0.5em; margin-right: 0.5em; padding-top: 0.1em; }
+.edit-event-form .time-period-input { grid-area: time-period-input; margin-top: 0.5em; }
+.edit-event-form .place { grid-area: place; margin-top: 0.5em; padding-top: 0.1em; }
+.edit-event-form .place-input { grid-area: place-input; margin-top: 0.5em; }
+.edit-event-form .type { grid-area: type; margin-top: 0.5em; padding-top: 0.1em; }
+.edit-event-form .type-input { grid-area: type-input; margin-top: 0.5em; }
+.edit-event-form .clubs { grid-area: clubs; margin-top: 0.5em; padding-top: 0.1em; }
+.edit-event-form .clubs-input { grid-area: clubs-input; margin-top: 0.5em; }
+.edit-event-form .points { grid-area: points; margin-top: 0.5em; margin-right: 0.5em; padding-top: 0.1em; }
+.edit-event-form .points-input { grid-area: points-input; margin-top: 0.5em; }
+.edit-event-form .info-text { grid-area: info-text; margin-top: 0.5em; padding-top: 0.1em; }
+.edit-event-form .info-text-input { grid-area: info-text-input; margin-top: 0.5em; }
+.edit-event-form .notice { grid-area: notice; margin-top: 0.5em; padding-top: 0.1em; }
+.edit-event-form .notice-input { grid-area: notice-input; margin-top: 0.5em; }
+.edit-event-form .submit-btn { 
+  grid-area: submit-btn; 
+
+  width: 100%;
+  margin-top: 0.5em; 
+}
+.edit-event-form .submit-btn .delete-btn {
+  background: none;
+  background-color: #fff;
+  width: auto;
+  padding: 0 0.75em;
+  margin-right: 2em;
+}
+.edit-event-form .incomplete-warning { 
+  grid-area: incomplete-warning; 
+  margin-top: 0.5em; 
+
+  display: none;
+  text-align: center;
+}
+
+.edit-event-form .date-warning,
+.edit-event-form .time-warning {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.edit-event-form .submit-btn input {
+  float: right;
+  height: 2em;
+  width: 2em;
+  background-color: #FFF;
+  border-radius: 200em;
+  border: none;
+
+  background-image: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.5em 1.5em;
+}
+
+.edit-event-form .submit-btn input:hover {
+  background-color: #BBB;
+  cursor: pointer;
+}
+
+.edit-event-form .textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  resize: none; 
+  overflow-y: auto; 
+}
+
+.edit-event-form input[type="text"],
+.edit-event-form input[type="number"],
+.edit-event-form textarea {
+  border-radius: 0.25em;
+  border: none;
+  padding: 0.3em 0.4em 0.3em 0.4em;
+}
+
+.login_form {
+  display: grid;
+  grid:
+    "login-failed login-failed" auto
+    "username username-input" auto 
+    "password password-input" auto 
+    "submit-btn submit-btn" auto
+    / auto auto;
+  gap: 0.5em;
+
+  margin: 1em;
+
+  place-items: center;
+
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.login_form .username {
+  grid-area: username;
+}
+
+.login_form .username-input {
+  grid-area: username-input;
+}
+
+.login_form .password {
+  grid-area: password;
+}
+
+.login_form .password-input {
+  grid-area: password-input;
+}
+
+.login_form .login-failed {
+  grid-area: login-failed;
+}
+
+.new-user-form input[type="text"],
+.new-user-form input[type="number"],
+.new-user-form input[type="checkbox"],
+.new-user-form input[type="email"],
+.new-user-form input[type="password"],
+.login_form input[type="text"],
+.login_form input[type="email"],
+.login_form input[type="password"] {
+  border: none;
+  border-radius: 0.5em;
+  background-color: #FFF;
+  padding: 0.5em;
+}
+
+.new-user-form input[type="text"]:hover,
+.new-user-form input[type="checkbox"]:hover,
+.new-user-form input[type="email"]:hover,
+.new-user-form input[type="password"]:hover,
+.login_form input[type="text"]:hover,
+.login_form input[type="email"]:hover,
+.login_form input[type="password"]:hover {
+  background-color: #BBB;
+}
+
+.new-user-form input[type="text"]:focus,
+.new-user-form input[type="email"]:focus,
+.new-user-form input[type="password"]:focus
+.login_form input[type="text"]:focus,
+.login_form input[type="email"]:focus,
+.login_form input[type="password"]:focus {
+  background-color: #BBB;
+}
+
+.new-user-form input[type="text"]::-webkit-input-placeholder,
+.new-user-form input[type="email"]::-webkit-input-placeholder,
+.new-user-form input[type="checkbox"]::-webkit-input-placeholder,
+.new-user-form input[type="password"]::-webkit-input-placeholder 
+.login_form input[type="text"]::-webkit-input-placeholder,
+.login_form input[type="email"]::-webkit-input-placeholder,
+.login_form input[type="password"]::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.new-user-form input[type="text"]::-moz-placeholder,
+.new-user-form input[type="email"]::-moz-placeholder,
+.new-user-form input[type="checkbox"]::-moz-placeholder,
+.new-user-form input[type="password"]::-moz-placeholder,
+.login_form input[type="text"]::-moz-placeholder,
+.login_form input[type="email"]::-moz-placeholder,
+.login_form input[type="password"]::-moz-placeholder {
+  color: transparent;
+}
+
+.new-user-form input[type="text"]::-ms-input-placeholder,
+.new-user-form input[type="email"]::-ms-input-placeholder,
+.new-user-form input[type="checkbox"]::-ms-input-placeholder,
+.new-user-form input[type="password"]::-ms-input-placeholder
+.login_form input[type="text"]::-ms-input-placeholder,
+.login_form input[type="email"]::-ms-input-placeholder,
+.login_form input[type="password"]::-ms-input-placeholder {
+  color: transparent;
+}
+
+.new-user-form input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 2em;
+  height: 2em;
+  background-color: #fff;
+  cursor: pointer;
+  display: block;
+  color: #000;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1em;
+}
+
+.new-user-form input[type="checkbox"]:checked {
+  background-color: #BBB;
+}
+
+.new-user-form input[type="checkbox"]:checked::after {
+  content: '\2714';
+}
+
+.login_form .submit-btn {
+  grid-area: submit-btn;
+  width: 100%;
+}
+
+.new-user-form input[type="submit"],
+.login_form input[type="submit"] {
+  background: white;
+  border: none;
+  border-radius: 200em;
+
+  height: 2em;
+  width: 2em;
+
+  float: right;
+
+  background-image: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.5em 1.5em;
+}
+
+.new-user-form input[type="submit"]:hover,
+.login_form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #BBB;  
+}
+
+.logout_form {
+  display: grid;
+  grid:
+    "question question" auto
+    "yes no" auto
+    / auto auto;
+  gap: 0.5em;
+
+  margin: 1em;
+
+  place-items: center;
+
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.logout_form .question {
+  grid-area: question;
+
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+}
+
+.logout_form .yes{
+  grid-area: yes;
+}
+
+.logout_form .no{
+  grid-area: no;
+}
+
+.logout_form .yes-btn input,
+.logout_form button {
+  height: 2em;
+  width: 5em;
+  background-color: #FFF;
+  border-radius: 200em;
+}
+
+.logout_form .yes-btn input:hover,
+.logout_form button:hover {
+  cursor: pointer;
+  background-color: #BBB;  
+}
+
+.user-management-popup .content .user-management-body {
+  
+display: grid;
+grid:
+  "new-user current-user-list" auto
+  / auto auto;
+gap: 0.5em;
+}
+
+.user-management-popup .content .current-user-list { 
+  grid-area: current-user-list; 
+
+  vertical-align: top;
+  color: #000;
+  text-align: left;
+  font-family: Inter;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  align-content: center;
+  align-self: center;
+  margin: 0.8em 1em 0.8em 0;
+}
+.user-management-popup .content .new-user {grid-area: new-user;}
+.user-management-popup .content .new-user-form {
+
+  display: grid;
+  grid:
+    "title title" auto
+    "name name-input" auto
+    "password password-input" auto
+    "confirm-password confirm-password-input" auto
+    "admin admin-input" auto
+    "error-message error-message" auto
+    "incomplete-message incomplete-message" auto
+    "submit-btn submit-btn" auto
+    / auto 1fr;
+
+  border-radius: 1em;
+  background-color: #d1d1d1;
+  padding: 0.5em;
+  margin: 1em;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.user-management-popup .content .new-user-form .title { grid-area: title; font-weight: 600; margin-top: 0.5em;}
+.user-management-popup .content .new-user-form .name { grid-area: name; padding-top: 0.35em;  margin-top: 0.5em;}
+.user-management-popup .content .new-user-form .name-input { grid-area: name-input; margin-top: 0.5em;}
+.user-management-popup .content .new-user-form .password { grid-area: password; padding-top: 0.35em; margin-top: 0.5em;}
+.user-management-popup .content .new-user-form .password-input { grid-area: password-input; margin-top: 0.5em;}
+.user-management-popup .content .new-user-form .confirm-password { grid-area: confirm-password; padding-top: 0.35em; margin-top: 0.5em; margin-right: 0.5em; width: max-content;}
+.user-management-popup .content .new-user-form .confirm-password-input { grid-area: confirm-password-input; margin-top: 0.5em;}
+.user-management-popup .content .new-user-form .admin { grid-area: admin; padding-top: 0.35em;  margin-top: 0.5em;}
+.user-management-popup .content .new-user-form .admin-input { grid-area: admin-input; margin-top: 0.5em;}
+.user-management-popup .content .new-user-form .error-message { 
+  grid-area: error-message; 
+  
+  display: none;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  text-align: center;
+}
+.user-management-popup .content .new-user-form .incomplete-message {
+  grid-area: incomplete-message;
+
+  display: none;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  text-align: center;
+}
+.user-management-popup .content .new-user-form .submit-btn { 
+  grid-area: submit-btn; 
+  margin-top: 0.5em;
+}
+
+.current-user-list .user-row {
+  background-color: #d1d1d1;
+
+  min-width: 24.75em;
+  border-radius: 1em;
+}
+
+.current-user-list .user-row-title {
+
+  padding: 0.25em 0.25em 0.25em 1em;
+  margin: 0.25em 0;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr auto auto;
+  gap: 1em;
+
+  align-items: center;
+}
+
+.current-user-list .user-row-title .expand-btn {
+  height: 2em;
+  width: 4.5em;
+
+  border: none;
+  background: none;
+  border-radius: 200em;
+  background-image: url(../img/arrow-expand.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1em 1em;
+}
+
+.current-user-list .user-row-title .contract-btn {
+  background-image: url(../img/arrow-contract.svg) !important;
+}
+
+.current-user-list .user-row-title .expand-btn:hover {
+  background-color: #bbbbbb;
+}
+
+.current-user-list .user-row-content {
+  margin: 0 1em 0.25em 1em;
+  align-items: center;
+  display: none;
+}
+
+.current-user-list .user-row-content .text {
+  width: 9em;
+}
+
+.current-user-list .user-row-content .set-new-username {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+
+  margin-bottom: 0.25em;
+}
+
+.current-user-list .user-row-content .set-new-password {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  
+  margin-bottom: 0.25em;
+}
+
+.current-user-list .user-row-content .delete-user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-bottom: 0.25em;
+}
+
+.current-user-list .user-row-content input[type="text"],
+.current-user-list .user-row-content input[type="password"] {
+  border-radius: 0.25em;
+  border: none;
+  padding: 0.3em 0.4em 0.3em 0.4em;
+}
+
+.current-user-list .user-row-content input[type="submit"]{
+  height: 1.75em;
+  width: 1.75em;
+  background-color: #FFF;
+  border-radius: 200em;
+  border: none;
+
+  margin-left: 0.5em;
+
+  background-image: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.5em 1.5em;
+}
+
+.current-user-list .user-row-content input[type="submit"]:hover {
+  background-color: #bbbbbb;
+}
+
+.current-user-list .user-row-content .delete-user input {
+  height: 1.5em;
+  width: auto;
+  background: none;
+  background-color: #de0a26;
+  border: none;
+  border-radius: 200em;
+  padding: 0 0.5em;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.current-user-list .user-row-content .delete-user input:hover{
+  background-color: #de0a26;
+  mix-blend-mode: multiply; 
+}

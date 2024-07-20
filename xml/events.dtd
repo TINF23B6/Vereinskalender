@@ -1,0 +1,18 @@
+<!ELEMENT events (event*)> 
+
+<!ELEMENT event (index, id, event_type, name, date, time_period, type, place, club0?, club1?, points0?, points1?, info_text, notice)> 
+
+<!ELEMENT index (#PCDATA)> 
+<!ELEMENT id (#PCDATA)> 
+<!ELEMENT event_type (#PCDATA)> 
+<!ELEMENT name (#PCDATA)> 
+<!ELEMENT date (#PCDATA)> 
+<!ELEMENT time_period (#PCDATA)> 
+<!ELEMENT type (#PCDATA)> 
+<!ELEMENT place (#PCDATA)> 
+<!ELEMENT club0 (#PCDATA)> 
+<!ELEMENT club1 (#PCDATA)> 
+<!ELEMENT points0 (#PCDATA)> 
+<!ELEMENT points1 (#PCDATA)> 
+<!ELEMENT info_text (#PCDATA)> 
+<!ELEMENT notice (#PCDATA)>

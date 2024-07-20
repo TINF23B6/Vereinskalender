@@ -1,0 +1,43 @@
+<!ELEMENT calendar (failedLogin, userLoggedIn, username, isAdmin, dateWrong, timeWrong, newEventType, editEvent, id, name, date_day, date_month, date_year, time_period_beginn, time_period_ende, place, type, clubs0, clubs1, points0, points1, info_text, notice, pointsTableActive, year, month+, home_path, path_year_btn, current_path, new_path_points_table_btn, path_week, path_year, path_month, new_path_left, new_path_today, new_path_right, date_today)>
+
+<!ELEMENT failedLogin (#PCDATA)>
+<!ELEMENT userLoggedIn (#PCDATA)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT isAdmin (#PCDATA)>
+<!ELEMENT dateWrong (#PCDATA)>
+<!ELEMENT timeWrong (#PCDATA)>
+<!ELEMENT newEventType (#PCDATA)>
+<!ELEMENT editEvent (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT date_day (#PCDATA)>
+<!ELEMENT date_month (#PCDATA)>
+<!ELEMENT date_year (#PCDATA)>
+<!ELEMENT time_period_beginn (#PCDATA)>
+<!ELEMENT time_period_ende (#PCDATA)>
+<!ELEMENT place (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT clubs0 (#PCDATA)>
+<!ELEMENT clubs1 (#PCDATA)>
+<!ELEMENT points0 (#PCDATA)>
+<!ELEMENT points1 (#PCDATA)>
+<!ELEMENT info_text (#PCDATA)>
+<!ELEMENT notice (#PCDATA)>
+<!ELEMENT pointsTableActive (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT month (index, month_name, date)+>
+<!ELEMENT home_path (#PCDATA)>
+<!ELEMENT path_year_btn (#PCDATA)>
+<!ELEMENT current_path (#PCDATA)>
+<!ELEMENT new_path_points_table_btn (#PCDATA)>
+<!ELEMENT path_week (#PCDATA)>
+<!ELEMENT path_year (#PCDATA)>
+<!ELEMENT path_month (#PCDATA)>
+<!ELEMENT new_path_left (#PCDATA)>
+<!ELEMENT new_path_today (#PCDATA)>
+<!ELEMENT new_path_right (#PCDATA)>
+<!ELEMENT date_today (#PCDATA)>
+
+<!ELEMENT index (#PCDATA)>
+<!ELEMENT month_name (#PCDATA)>
+<!ELEMENT date (#PCDATA)>

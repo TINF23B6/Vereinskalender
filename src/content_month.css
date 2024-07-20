@@ -1,0 +1,524 @@
+.content-calendar .title {
+  border-radius: 1em;
+  background: #C2C2C2;
+  height: 1.8em;
+
+  color: #000;
+  text-align: center;
+  align-content: center;
+  font-family: Inter;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.content-calendar .title {
+  border-radius: 1em;
+  background: #C2C2C2;
+  height: 1.8em;
+
+  color: #000;
+  text-align: center;
+  align-content: center;
+  font-family: Inter;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.content-calendar {
+  grid-area: content-calendar;
+
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid:
+    "title-0 title-1 title-2 title-3 title-4 title-5 title-6 " auto 
+    "day-0 day-1 day-2 day-3 day-4 day-5 day-6" 1fr 
+    "day-7 day-8 day-9 day-10 day-11 day-12 day-13" 1fr 
+    "day-14 day-15 day-16 day-17 day-18 day-19 day-20" 1fr 
+    "day-21 day-22 day-23 day-24 day-25 day-26 day-27" 1fr 
+    "day-28 day-29 day-30 day-31 day-32 day-33 day-34" 1fr 
+    "day-35 day-36 day-37 day-38 day-39 day-40 day-41" 1fr 
+    / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5em;
+}
+
+.content-calendar.small {
+  grid:
+    "title-0 title-1 title-2 title-3 title-4 title-5 title-6 " auto 
+    "day-0 day-1 day-2 day-3 day-4 day-5 day-6" 1fr
+    "day-7 day-8 day-9 day-10 day-11 day-12 day-13" 1fr 
+    "day-14 day-15 day-16 day-17 day-18 day-19 day-20" 1fr 
+    "day-21 day-22 day-23 day-24 day-25 day-26 day-27" 1fr 
+    "day-28 day-29 day-30 day-31 day-32 day-33 day-34" 1fr 
+    / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.title-0 {
+  grid-area: title-0;
+}
+
+.title-1 {
+  grid-area: title-1;
+}
+
+.title-2 {
+  grid-area: title-2;
+}
+
+.title-3 {
+  grid-area: title-3;
+}
+
+.title-4 {
+  grid-area: title-4;
+}
+
+.title-5 {
+  grid-area: title-5;
+}
+
+.title-6 {
+  grid-area: title-6;
+}
+
+.day-0 {
+  grid-area: day-0;
+}
+
+.day-1 {
+  grid-area: day-1;
+}
+
+.day-2 {
+  grid-area: day-2;
+}
+
+.day-3 {
+  grid-area: day-3;
+}
+
+.day-4 {
+  grid-area: day-4;
+}
+
+.day-5 {
+  grid-area: day-5;
+}
+
+.day-6 {
+  grid-area: day-6;
+}
+
+.day-7 {
+  grid-area: day-7;
+}
+
+.day-8 {
+  grid-area: day-8;
+}
+
+.day-9 {
+  grid-area: day-9;
+}
+
+.day-10 {
+  grid-area: day-10;
+}
+
+.day-11 {
+  grid-area: day-11;
+}
+
+.day-12 {
+  grid-area: day-12;
+}
+
+.day-13 {
+  grid-area: day-13;
+}
+
+.day-14 {
+  grid-area: day-14;
+}
+
+.day-15 {
+  grid-area: day-15;
+}
+
+.day-16 {
+  grid-area: day-16;
+}
+
+.day-17 {
+  grid-area: day-17;
+}
+
+.day-18 {
+  grid-area: day-18;
+}
+
+.day-19 {
+  grid-area: day-19;
+}
+
+.day-20 {
+  grid-area: day-20;
+}
+
+.day-21 {
+  grid-area: day-21;
+}
+
+.day-22 {
+  grid-area: day-22;
+}
+
+.day-23 {
+  grid-area: day-23;
+}
+
+.day-24 {
+  grid-area: day-24;
+}
+
+.day-25 {
+  grid-area: day-25;
+}
+
+.day-26 {
+  grid-area: day-26;
+}
+
+.day-27 {
+  grid-area: day-27;
+}
+
+.day-28 {
+  grid-area: day-28;
+}
+
+.day-29 {
+  grid-area: day-29;
+}
+
+.day-30 {
+  grid-area: day-30;
+}
+
+.day-31 {
+  grid-area: day-31;
+}
+
+.day-32 {
+  grid-area: day-32;
+}
+
+.day-33 {
+  grid-area: day-33;
+}
+
+.day-34 {
+  grid-area: day-34;
+}
+
+.content-calendar .calendar-body {
+  border-radius: 1em;
+  background: #A3A3A3;
+
+  display: grid;
+  grid:
+    "events number" 1fr / 1fr auto;
+}
+
+.content-calendar .calendar-body .number {
+  grid-area: number;
+
+  height: 1.75em;
+  width: 1.75em;
+  border-radius: 1000em;
+  background-color: #FFF;
+
+  margin: 0.75em 0.75em 0.75em 0;
+
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  align-content: center;
+  align-self: start;
+}
+
+#number_today {
+  background-color: #f97e20;
+}
+
+.content-calendar .calendar-body .events {
+  grid-area: events;
+  height: 100%;
+
+
+  margin: 0.75em 0.5em 0.25em 0.75em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content-calendar .calendar-body.outside-month {
+  background: #A3A3A380;
+}
+
+.content-calendar .calendar-body.outside-month .events button.event_btn,
+.content-calendar .calendar-body.outside-month .number {
+  opacity: 0.5;
+}
+
+.events button {
+  height: auto;
+  width: auto;
+
+  background-color: #FFF;
+  border-radius: 0.5em;
+  padding: 0.1em;
+
+  word-wrap: break-all;
+
+  margin-bottom: 0.5em;
+
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+}
+
+.events button:hover {
+  cursor: pointer;
+  background-color: #666;
+}
+
+.user-management-popup,
+.new-event-popup,
+.logout_popup,
+.login_popup,
+.event_popup {
+  display: none;
+}
+
+.user-management-popup .background,
+.edit-event-popup .background,
+.new-event-popup .background,
+.logout_popup .background,
+.login_popup .background,
+.event_popup .background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #33333399;
+  z-index: 1000;
+  backdrop-filter: blur(2.5px);
+}
+
+.user-management-popup .popup,
+.edit-event-popup .popup,
+.new-event-popup .popup,
+.logout_popup .popup,
+.login_popup .popup,
+.event_popup .popup {
+  max-height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  border-radius: 1em;
+  background: #A3A3A3;
+}
+
+.user-management-popup .popup .close_btn,
+.edit-event-popup .popup .close_btn,
+.new-event-popup .popup .close_btn,
+.logout_popup .popup .close_btn,
+.login_popup .popup .close_btn,
+.event_popup .popup .close_btn {
+  position: absolute;
+  top: 0.75em;
+  right: 0.75em;
+
+  height: 2em;
+  width: 2em;
+  border-radius: 1000em;
+  background-color: #FFF;
+
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  align-content: center;
+  align-self: start;
+
+
+  background-image: url(../img/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.25em 1.25em;
+}
+
+.user-management-popup .popup .close_btn:hover,
+.edit-event-popup .popup .close_btn:hover,
+.new-event-popup .popup .close_btn:hover,
+.logout_popup .popup .close_btn:hover,
+.login_popup .popup .close_btn:hover,
+.event_popup .popup .close_btn:hover {
+  cursor: pointer;
+}
+
+.user-management-popup .popup .content,
+.edit-event-popup .popup .content,
+.new-event-popup .popup .content,
+.logout_popup .popup .content,
+.login_popup .popup .content,
+.event_popup .popup .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 0;
+  padding-left: 0;
+  gap: 0;
+}
+
+.user-management-popup .popup .content h1,
+.edit-event-popup .popup .content h1,
+.new-event-popup .popup .content h1,
+.logout_popup .popup .content h1,
+.login_popup .popup .content h1,
+.event_popup .popup .content h1 {
+  border-radius: 0.75em 0.75em 0 0;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+
+  width: 100%;
+  background-color: #FFFFFF80;
+
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 750;
+  line-height: normal;
+  align-content: center;
+  align-self: center;
+}
+
+.user-management-popup .popup .content .popup-body,
+.edit-event-popup .popup .content .popup-body,
+.new-event-popup .popup .content .popup-body {
+  max-height: calc(100vh - 4.5em);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+ /* WebKit browsers */
+ .user-management-popup .popup .content .popup-body::-webkit-scrollbar,
+ .edit-event-popup .popup .content .popup-body::-webkit-scrollbar,
+  .new-event-popup .popup .content .popup-body::-webkit-scrollbar {
+  width: 0.75em;
+}
+
+.user-management-popup .popup .content .popup-body::-webkit-scrollbar-track,
+.edit-event-popup .popup .content .popup-body::-webkit-scrollbar-track,
+  .new-event-popup .popup .content .popup-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.user-management-popup .popup .content .popup-body::-webkit-scrollbar-thumb,
+.edit-event-popup .popup .content .popup-body::-webkit-scrollbar-thumb,
+  .new-event-popup .popup .content .popup-body::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 0.5em;
+  margin-right: 1em;
+}
+
+.user-management-popup .popup .content .popup-body::-webkit-scrollbar-thumb:hover,
+.edit-event-popup .popup .content .popup-body::-webkit-scrollbar-thumb:hover,
+  .new-event-popup .popup .content .popup-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox */
+.user-management-popup .popup .content .popup-body,
+.edit-event-popup .popup .content .popup-body,
+  .new-event-popup .popup .content .popup-body {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1; 
+}
+
+.new-event-popup .popup .content table,
+.logout_popup .popup .content table,
+.login_popup .popup .content table,
+.event_popup .popup .content table {
+  margin: 0.5em 0.75em 0.75em 0.75em;
+}
+
+.new-event-popup .popup .content td,
+.logout_popup .popup .content td,
+.login_popup .popup .content td,
+.event_popup .popup .content td {
+  padding-top: 0.25em;
+
+  vertical-align: top;
+  color: #000;
+  text-align: left;
+  font-family: Inter;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  align-content: center;
+  align-self: center;
+}
+
+.new-event-popup .popup .content tr td:first-child,
+.logout_popup .popup .content tr td:first-child,
+.login_popup .popup .content tr td:first-child,
+.event_popup .popup .content tr td:first-child {
+  padding-right: 0.25em;
+}
+
+.event_popup .popup .edit-form,
+.event_popup .popup .edit-btn {
+  width: 100%;
+}
+
+.event_popup .popup .edit-btn input {
+  float: right;
+  height: 2em;
+  background-color: #FFF;
+  border-radius: 200em;
+  border: none;
+
+  font-size: 0.9em;
+  padding: 0 0.4em 0 0.4em; 
+  margin: 0 0.5em 0.5em 0;
+}
+
+.event_popup .popup .edit-btn input:hover {
+  background-color: #BBB;
+  cursor: pointer;
+}

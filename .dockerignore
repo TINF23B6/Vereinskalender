@@ -1,0 +1,10 @@
+.env
+node_modules
+.vscode
+.github
+docs
+.gitignore
+README.md
+*.code-workspace
+docker-compose.yml
+mysql/*

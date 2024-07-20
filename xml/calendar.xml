@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE calendar SYSTEM 'calendar_month.dtd'> 
+<calendar> 
+	<failedLogin>false</failedLogin>
+	<userLoggedIn>true</userLoggedIn>
+	<username><![CDATA[1a]]></username>
+	<isAdmin>true</isAdmin>
+	<dateWrong></dateWrong>
+	<timeWrong></timeWrong>
+	<newEventType></newEventType>
+	<editEvent></editEvent>
+	<id><![CDATA[]]></id>
+	<name><![CDATA[]]></name>
+	<date_day><![CDATA[]]></date_day>
+	<date_month><![CDATA[]]></date_month>
+	<date_year><![CDATA[]]></date_year>
+	<time_period_beginn><![CDATA[]]></time_period_beginn>
+	<time_period_ende><![CDATA[]]></time_period_ende>
+	<place><![CDATA[]]></place>
+	<type><![CDATA[]]></type>
+	<clubs0><![CDATA[]]></clubs0>
+	<clubs1><![CDATA[]]></clubs1>
+	<points0><![CDATA[]]></points0>
+	<points1><![CDATA[]]></points1>
+	<info_text><![CDATA[]]></info_text>
+	<notice><![CDATA[]]></notice>
+	<pointsTableActive>false</pointsTableActive>
+	<month>Juli</month>
+	<year>2024</year>
+	<month_btn>
+		<index>01</index>
+		<name_month>Januar</name_month>
+	</month_btn>
+	<month_btn>
+		<index>02</index>
+		<name_month>Februar</name_month>
+	</month_btn>
+	<month_btn>
+		<index>03</index>
+		<name_month>März</name_month>
+	</month_btn>
+	<month_btn>
+		<index>04</index>
+		<name_month>April</name_month>
+	</month_btn>
+	<month_btn>
+		<index>05</index>
+		<name_month>Mai</name_month>
+	</month_btn>
+	<month_btn>
+		<index>06</index>
+		<name_month>Juni</name_month>
+	</month_btn>
+	<month_btn>
+		<index>07</index>
+		<name_month>Juli</name_month>
+	</month_btn>
+	<month_btn>
+		<index>08</index>
+		<name_month>August</name_month>
+	</month_btn>
+	<month_btn>
+		<index>09</index>
+		<name_month>September</name_month>
+	</month_btn>
+	<month_btn>
+		<index>10</index>
+		<name_month>Oktober</name_month>
+	</month_btn>
+	<month_btn>
+		<index>11</index>
+		<name_month>November</name_month>
+	</month_btn>
+	<month_btn>
+		<index>12</index>
+		<name_month>Dezember</name_month>
+	</month_btn>
+	<home_path><![CDATA[/home.php]]></home_path>
+	<path_month_btn><![CDATA[/calendar.php?view=month&pointsTableActive=false]]></path_month_btn>
+	<current_path><![CDATA[/calendar.php?view=month&pointsTableActive=false&day=18&month=07&year=2024]]></current_path>
+	<new_path_points_table_btn><![CDATA[/calendar.php?view=month&pointsTableActive=true&day=18&month=07&year=2024]]></new_path_points_table_btn>
+	<path_week><![CDATA[/calendar.php?view=week&pointsTableActive=false&day=18&month=07&year=2024]]></path_week>
+	<path_year><![CDATA[/calendar.php?view=year&pointsTableActive=false&day=18&month=07&year=2024]]></path_year>
+	<path_month><![CDATA[/calendar.php?view=month&pointsTableActive=false&day=18&month=07&year=2024]]></path_month>
+	<new_path_left><![CDATA[/calendar.php?view=month&pointsTableActive=false&day=01&month=06&year=2024]]></new_path_left>
+	<new_path_today><![CDATA[/calendar.php?view=month&pointsTableActive=false&day=18&month=07&year=2024]]></new_path_today>
+	<new_path_right><![CDATA[/calendar.php?view=month&pointsTableActive=false&day=01&month=08&year=2024]]></new_path_right>
+	<date_today>2024-07-18</date_today>
+	<calendar_size>small</calendar_size> 
+	<day_month> 
+		<number>0</number> 
+		<date>2024-07-01</date> 
+		<day_number>01</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>1</number> 
+		<date>2024-07-02</date> 
+		<day_number>02</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>2</number> 
+		<date>2024-07-03</date> 
+		<day_number>03</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>3</number> 
+		<date>2024-07-04</date> 
+		<day_number>04</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>4</number> 
+		<date>2024-07-05</date> 
+		<day_number>05</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>5</number> 
+		<date>2024-07-06</date> 
+		<day_number>06</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>6</number> 
+		<date>2024-07-07</date> 
+		<day_number>07</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>7</number> 
+		<date>2024-07-08</date> 
+		<day_number>08</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>8</number> 
+		<date>2024-07-09</date> 
+		<day_number>09</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>9</number> 
+		<date>2024-07-10</date> 
+		<day_number>10</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>10</number> 
+		<date>2024-07-11</date> 
+		<day_number>11</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>11</number> 
+		<date>2024-07-12</date> 
+		<day_number>12</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>12</number> 
+		<date>2024-07-13</date> 
+		<day_number>13</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>13</number> 
+		<date>2024-07-14</date> 
+		<day_number>14</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>14</number> 
+		<date>2024-07-15</date> 
+		<day_number>15</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>15</number> 
+		<date>2024-07-16</date> 
+		<day_number>16</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>16</number> 
+		<date>2024-07-17</date> 
+		<day_number>17</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>17</number> 
+		<date>2024-07-18</date> 
+		<day_number>18</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>18</number> 
+		<date>2024-07-19</date> 
+		<day_number>19</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>19</number> 
+		<date>2024-07-20</date> 
+		<day_number>20</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>20</number> 
+		<date>2024-07-21</date> 
+		<day_number>21</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>21</number> 
+		<date>2024-07-22</date> 
+		<day_number>22</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>22</number> 
+		<date>2024-07-23</date> 
+		<day_number>23</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>23</number> 
+		<date>2024-07-24</date> 
+		<day_number>24</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>24</number> 
+		<date>2024-07-25</date> 
+		<day_number>25</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>25</number> 
+		<date>2024-07-26</date> 
+		<day_number>26</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>26</number> 
+		<date>2024-07-27</date> 
+		<day_number>27</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>27</number> 
+		<date>2024-07-28</date> 
+		<day_number>28</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>28</number> 
+		<date>2024-07-29</date> 
+		<day_number>29</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>29</number> 
+		<date>2024-07-30</date> 
+		<day_number>30</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>30</number> 
+		<date>2024-07-31</date> 
+		<day_number>31</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>31</number> 
+		<date>2024-08-01</date> 
+		<day_number>01</day_number> 
+		<in_shown_month> outside-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>32</number> 
+		<date>2024-08-02</date> 
+		<day_number>02</day_number> 
+		<in_shown_month> outside-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>33</number> 
+		<date>2024-08-03</date> 
+		<day_number>03</day_number> 
+		<in_shown_month> outside-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>34</number> 
+		<date>2024-08-04</date> 
+		<day_number>04</day_number> 
+		<in_shown_month> outside-month</in_shown_month> 
+	</day_month> 
+</calendar>

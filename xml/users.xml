@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE users SYSTEM 'users.dtd'> 
+<users> 
+	<user>
+		<id>2</id>
+		<name>1a</name>
+		<isAdmin>0</isAdmin>
+	</user>
+	<user>
+		<id>3</id>
+		<name>admin</name>
+		<isAdmin>1</isAdmin>
+	</user>
+	<user>
+		<id>4</id>
+		<name>user</name>
+		<isAdmin>0</isAdmin>
+	</user>
+	<user>
+		<id>5</id>
+		<name>Tim</name>
+		<isAdmin>1</isAdmin>
+	</user>
+	<user>
+		<id>6</id>
+		<name>33</name>
+		<isAdmin>1</isAdmin>
+	</user>
+	<user>
+		<id>7</id>
+		<name>aa</name>
+		<isAdmin>1</isAdmin>
+	</user>
+	<user>
+		<id>8</id>
+		<name>a</name>
+		<isAdmin>0</isAdmin>
+	</user>
+</users>

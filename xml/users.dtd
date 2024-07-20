@@ -1,0 +1,7 @@
+<!ELEMENT users (user*)>
+
+<!ELEMENT user (id, name, isAdmin)>
+
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT isAdmin (#PCDATA)>

@@ -1,0 +1,11 @@
+<!ELEMENT points_table (team*)>
+
+<!ELEMENT team (our_club?, name, win, draw, loss, points, year)>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT win (#PCDATA)>
+<!ELEMENT draw (#PCDATA)>
+<!ELEMENT loss (#PCDATA)>
+<!ELEMENT points (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT our_club (#PCDATA)>
