@@ -2,9 +2,9 @@
 
 This repository contains the source code for Vereinskalender.
 
-## Building and Starting the Project via Docker Compose
+## Starting the Project via Docker Compose
 
-To build and start the project, you'll need to have Docker installed on your machine. Here's how:
+To start the project, you'll need to have Docker installed on your machine. Here's how:
 
 ### Prerequisites
 
