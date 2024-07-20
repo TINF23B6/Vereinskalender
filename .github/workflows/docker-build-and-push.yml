@@ -20,8 +20,8 @@ jobs:
                   password: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Build and push
-              uses: .docker/build-push-action@v6
+              uses: docker/build-push-action@v6
               with:
                   push: true
-                  file: docker/Dockerfile
+                  file: .docker/Dockerfile
                   tags: ghcr.io/tinf23b6/vereinskalender:latest
