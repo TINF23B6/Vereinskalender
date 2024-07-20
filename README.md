@@ -27,6 +27,14 @@ This will start the project in detached mode, which means it will run in the bac
 
 Once the project is running, you can access it by visiting `https://localhost:8443` (or the port number specified in your `docker-compose.yaml` file) in your web browser (Optional, phpMyAdmin at `http://localhost:8090`).
 
+### Stopping the Project
+
+To stop the project, run:
+```bash
+docker compose down
+```
+This will stop the project and remove the containers.
+
 ### Local Building and Starting the Project with Docker
 
 1. Clone this repository
