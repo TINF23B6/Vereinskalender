@@ -1,7 +1,7 @@
 services:
     vereinskalender:
         container_name: vereinskalender-app
-        image: verein-cal:dev
+        image: ghcr.io/tinf23b6/vereinskalender:latest
         build:
             context: .
             dockerfile: .docker/Dockerfile
