@@ -21,7 +21,7 @@ wget https://raw.githubusercontent.com/TINF23B6/Vereinskalender/main/docker-comp
 ```bash
 docker compose up -d
 ```
-This will start the project in detached mode, which means it will run in the background and not take up a terminal window.
+This will start the project in detached mode, which means it will run in the background and not take up a terminal window. Give it some time for the project and database to start up.
 
 ### Accessing the Project
 
@@ -52,7 +52,7 @@ This will download and install all the necessary dependencies for your projet.
 ```bash
 docker compose up -d
 ```
-This will start the project in detached mode, which means it will run in the background and not take up a terminal window.
+This will start the project in detached mode, which means it will run in the background and not take up a terminal window. Give it some time for the project and database to start up.
 
 ### Accessing the Project
 
