@@ -14,7 +14,8 @@ services:
             - DB_PORT=3306
             - TZ=Europe/Berlin
         depends_on:
-            - db
+            db:
+                condition: service_healthy
         restart: unless-stopped
 
     db:
@@ -35,7 +36,7 @@ services:
         volumes:
             - ./mysql:/var/lib/mysql
         restart: unless-stopped
-    
+
     # Optional (für Debugging / Entwicklung)
     phpmyadmin:
         container_name: vereinskalender-phpmyadmin
@@ -48,6 +49,6 @@ services:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_USER: verein
             MYSQL_PASSWORD: verein
-        depends_on:
-            - db
+            db:
+                condition: service_healthy
         restart: unless-stopped
