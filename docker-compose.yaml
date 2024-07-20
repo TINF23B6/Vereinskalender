@@ -1,7 +1,7 @@
 services:
     vereinskalender:
         container_name: vereinskalender-app
-        image: verein-cal:dev
+        image: ghcr.io/tinf23b6/vereinskalender:latest
         build:
             context: .
             dockerfile: .docker/Dockerfile
@@ -33,7 +33,7 @@ services:
     # Optional (für Debugging / Entwicklung)
     phpmyadmin:
         container_name: vereinskalender-phpmyadmin
-        image: phpmyadmin/phpmyadmin
+        image: phpmyadmin/phpmyadmin:latest
         ports:
             - '8090:80'
         environment:
