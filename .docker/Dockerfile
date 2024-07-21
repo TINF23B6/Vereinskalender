@@ -3,7 +3,7 @@ FROM php:8.2-apache
 COPY ./.docker/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
-RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/mycert.key -out /etc/ssl/certs/mycert.crt -subj "/C=DE/ST=BW/L=Karlsruhe/O=TINF23B6/OU=WWW/CN=localhost"
+RUN openssl req -x509 -nodes -days 3650 -newkey rsa:4096 -keyout /etc/ssl/private/mycert.key -out /etc/ssl/certs/mycert.crt -subj "/C=DE/ST=BW/L=Karlsruhe/O=TINF23B6/OU=WWW/CN=localhost"
 
 RUN a2enmod rewrite && a2enmod ssl && a2enmod socache_shmcb
 RUN sed -i '/SSLCertificateFile.*snakeoil\.pem/c\SSLCertificateFile \/etc\/ssl\/certs\/mycert.crt' /etc/apache2/sites-available/default-ssl.conf && sed -i '/SSLCertificateKeyFile.*snakeoil\.key/cSSLCertificateKeyFile /etc/ssl/private/mycert.key\' /etc/apache2/sites-available/default-ssl.conf
