@@ -19,6 +19,6 @@ COPY . .
 
 RUN chmod -R 777 /var/www/html
 
-EXPOSE 80
+EXPOSE 443
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
