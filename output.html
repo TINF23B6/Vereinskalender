@@ -25,7 +25,7 @@
 <h1>Logout</h1>
 <div class="logout_form">
 <div class="question">Möchten sie sich ausloggen?</div>
-<form method="post" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024"><div class="yes-btn yes"><input type="submit" name="logout" value="Ja"></div></form>
+<form method="post" action="http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false&amp;day=22&amp;month=07&amp;year=2024"><div class="yes-btn yes"><input type="submit" name="logout" value="Ja"></div></form>
 <button onclick="hidePopup('logout_popup')" class="no">Nein</button>
 </div>
 </div>
@@ -43,7 +43,7 @@
 <button class="left" id="match-btn" onclick="showNewEventFormMatch()">Fußballspiel</button><button class="right" id="club-events-btn" onclick="showNewEventFormClubEvents()">Veranstaltung</button>
 </div></div>
 <div class="new-event-form-content">
-<form method="post" class="new-event-form-match" id="match-content" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
+<form method="post" class="new-event-form-match" id="match-content" action="http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false&amp;day=22&amp;month=07&amp;year=2024">
 <div class="name">Name*:</div>
 <div class="name-input"><input type="text" name="name" id="new-match-name-input"></div>
 <div class="date">Datum*:</div>
@@ -73,9 +73,9 @@
 </div>
 <div class="points">Ergebnis:</div>
 <div class="points-input">
-<input type="number" name="points0">
+<input type="number" name="points0" min="0" max="99">
 																:
-															<input type="number" name="points1">
+															<input type="number" name="points1" min="0" max="99">
 </div>
 <div class="info-text">Info:</div>
 <div class="info-text-input"><textarea name="info-text" rows="4" cols="1" class="textarea"></textarea></div>
@@ -84,7 +84,7 @@
 <div class="incomplete-warning" id="new-match-incomplete-warning"><p>Bitte fülle alle benötigten Felder aus.</p></div>
 <div class="submit-btn"><input type="submit" value="" name="new-match"></div>
 </form>
-<form method="post" class="new-event-form-club-events" id="club-events-content" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
+<form method="post" class="new-event-form-club-events" id="club-events-content" action="http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false&amp;day=22&amp;month=07&amp;year=2024">
 <div class="name">Name*:</div>
 <div class="name-input"><input type="text" name="name" id="new-club-event-name-input"></div>
 <div class="date">Datum*:</div>
@@ -126,7 +126,7 @@
 <div class="content">
 <h1>User Management</h1>
 <div class="user-management-body popup-body">
-<div class="new-user"><form method="post" class="new-user-form" id="new-user-form" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
+<div class="new-user"><form method="post" class="new-user-form" id="new-user-form" action="http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false&amp;day=22&amp;month=07&amp;year=2024">
 <div class="title">Neuen User erstellen</div>
 <div class="name">Name:</div>
 <div class="name-input"><input type="text" name="username" id="new-username-input"></div>
@@ -140,170 +140,7 @@
 <div class="incomplete-message" id="new-user-password-incomplete-message">Bitte fülle alle benötigten Felder aus.</div>
 <div class="submit-btn"><input type="submit" value="" name="create-new-user"></div>
 </form></div>
-<div class="current-user-list">
-<div class="user-row">
-<div class="user-row-title">1a<div></div>
-<button class="expand-btn" id="expand-btn-2"></button>
-</div>
-<div class="user-row-content" id="user-row-content-2">
-<form method="post" class="set-new-username" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neuer Name:</div>
-<div class="input-username"><input type="text" name="new-username" required="required"></div>
-<div><input type="hidden" name="id" value="2"></div>
-<div class="confirm-username"><input type="submit" value="" name="users-set-new-username"></div>
-</form>
-<form method="post" class="set-new-password" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neues Passwort:</div>
-<div class="input-password"><input type="password" name="new-password" required="required"></div>
-<div><input type="hidden" name="id" value="2"></div>
-<div class="confirm-password"><input type="submit" value="" name="users-set-new-password"></div>
-</form>
-<div class="delete-user"><form method="post" class="delete-user-form" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<input type="hidden" name="id" value="2"><input type="submit" name="users-delete-user" class="delete-user-btn" value="Löschen">
-</form></div>
-</div>
-</div>
-<div class="user-row">
-<div class="user-row-title">admin<div>
-																	Admin
-																	</div>
-<button class="expand-btn" id="expand-btn-3"></button>
-</div>
-<div class="user-row-content" id="user-row-content-3">
-<form method="post" class="set-new-username" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neuer Name:</div>
-<div class="input-username"><input type="text" name="new-username" required="required"></div>
-<div><input type="hidden" name="id" value="3"></div>
-<div class="confirm-username"><input type="submit" value="" name="users-set-new-username"></div>
-</form>
-<form method="post" class="set-new-password" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neues Passwort:</div>
-<div class="input-password"><input type="password" name="new-password" required="required"></div>
-<div><input type="hidden" name="id" value="3"></div>
-<div class="confirm-password"><input type="submit" value="" name="users-set-new-password"></div>
-</form>
-<div class="delete-user"><form method="post" class="delete-user-form" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<input type="hidden" name="id" value="3"><input type="submit" name="users-delete-user" class="delete-user-btn" value="Löschen">
-</form></div>
-</div>
-</div>
-<div class="user-row">
-<div class="user-row-title">user<div></div>
-<button class="expand-btn" id="expand-btn-4"></button>
-</div>
-<div class="user-row-content" id="user-row-content-4">
-<form method="post" class="set-new-username" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neuer Name:</div>
-<div class="input-username"><input type="text" name="new-username" required="required"></div>
-<div><input type="hidden" name="id" value="4"></div>
-<div class="confirm-username"><input type="submit" value="" name="users-set-new-username"></div>
-</form>
-<form method="post" class="set-new-password" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neues Passwort:</div>
-<div class="input-password"><input type="password" name="new-password" required="required"></div>
-<div><input type="hidden" name="id" value="4"></div>
-<div class="confirm-password"><input type="submit" value="" name="users-set-new-password"></div>
-</form>
-<div class="delete-user"><form method="post" class="delete-user-form" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<input type="hidden" name="id" value="4"><input type="submit" name="users-delete-user" class="delete-user-btn" value="Löschen">
-</form></div>
-</div>
-</div>
-<div class="user-row">
-<div class="user-row-title">Tim<div>
-																	Admin
-																	</div>
-<button class="expand-btn" id="expand-btn-5"></button>
-</div>
-<div class="user-row-content" id="user-row-content-5">
-<form method="post" class="set-new-username" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neuer Name:</div>
-<div class="input-username"><input type="text" name="new-username" required="required"></div>
-<div><input type="hidden" name="id" value="5"></div>
-<div class="confirm-username"><input type="submit" value="" name="users-set-new-username"></div>
-</form>
-<form method="post" class="set-new-password" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neues Passwort:</div>
-<div class="input-password"><input type="password" name="new-password" required="required"></div>
-<div><input type="hidden" name="id" value="5"></div>
-<div class="confirm-password"><input type="submit" value="" name="users-set-new-password"></div>
-</form>
-<div class="delete-user"><form method="post" class="delete-user-form" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<input type="hidden" name="id" value="5"><input type="submit" name="users-delete-user" class="delete-user-btn" value="Löschen">
-</form></div>
-</div>
-</div>
-<div class="user-row">
-<div class="user-row-title">33<div>
-																	Admin
-																	</div>
-<button class="expand-btn" id="expand-btn-6"></button>
-</div>
-<div class="user-row-content" id="user-row-content-6">
-<form method="post" class="set-new-username" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neuer Name:</div>
-<div class="input-username"><input type="text" name="new-username" required="required"></div>
-<div><input type="hidden" name="id" value="6"></div>
-<div class="confirm-username"><input type="submit" value="" name="users-set-new-username"></div>
-</form>
-<form method="post" class="set-new-password" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neues Passwort:</div>
-<div class="input-password"><input type="password" name="new-password" required="required"></div>
-<div><input type="hidden" name="id" value="6"></div>
-<div class="confirm-password"><input type="submit" value="" name="users-set-new-password"></div>
-</form>
-<div class="delete-user"><form method="post" class="delete-user-form" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<input type="hidden" name="id" value="6"><input type="submit" name="users-delete-user" class="delete-user-btn" value="Löschen">
-</form></div>
-</div>
-</div>
-<div class="user-row">
-<div class="user-row-title">aa<div>
-																	Admin
-																	</div>
-<button class="expand-btn" id="expand-btn-7"></button>
-</div>
-<div class="user-row-content" id="user-row-content-7">
-<form method="post" class="set-new-username" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neuer Name:</div>
-<div class="input-username"><input type="text" name="new-username" required="required"></div>
-<div><input type="hidden" name="id" value="7"></div>
-<div class="confirm-username"><input type="submit" value="" name="users-set-new-username"></div>
-</form>
-<form method="post" class="set-new-password" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neues Passwort:</div>
-<div class="input-password"><input type="password" name="new-password" required="required"></div>
-<div><input type="hidden" name="id" value="7"></div>
-<div class="confirm-password"><input type="submit" value="" name="users-set-new-password"></div>
-</form>
-<div class="delete-user"><form method="post" class="delete-user-form" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<input type="hidden" name="id" value="7"><input type="submit" name="users-delete-user" class="delete-user-btn" value="Löschen">
-</form></div>
-</div>
-</div>
-<div class="user-row">
-<div class="user-row-title">a<div></div>
-<button class="expand-btn" id="expand-btn-8"></button>
-</div>
-<div class="user-row-content" id="user-row-content-8">
-<form method="post" class="set-new-username" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neuer Name:</div>
-<div class="input-username"><input type="text" name="new-username" required="required"></div>
-<div><input type="hidden" name="id" value="8"></div>
-<div class="confirm-username"><input type="submit" value="" name="users-set-new-username"></div>
-</form>
-<form method="post" class="set-new-password" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<div class="text">Neues Passwort:</div>
-<div class="input-password"><input type="password" name="new-password" required="required"></div>
-<div><input type="hidden" name="id" value="8"></div>
-<div class="confirm-password"><input type="submit" value="" name="users-set-new-password"></div>
-</form>
-<div class="delete-user"><form method="post" class="delete-user-form" action="http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024">
-<input type="hidden" name="id" value="8"><input type="submit" name="users-delete-user" class="delete-user-btn" value="Löschen">
-</form></div>
-</div>
-</div>
-</div>
+<div class="current-user-list"></div>
 </div>
 </div>
 </div></div></div>
@@ -311,11 +148,11 @@
 </div>
 <div class="main">
 <div class="option-bar">
-<div class="home-btn option-bar-0"><button onclick="window.location.href = 'http://localhost/WebProjekt/home.php'"></button></div>
+<div class="home-btn option-bar-0"><button onclick="window.location.href = 'http://localhost/Vereinskalender/home.php'"></button></div>
 <div class="option-view-btn option-bar-1">
-<button class="left current" onclick="window.location.href = 'http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024'">
+<button class="left current" onclick="window.location.href = 'http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false&amp;day=22&amp;month=07&amp;year=2024'">
 								Monat
-							</button><button class="right" onclick="window.location.href = 'http://localhost/WebProjekt/calendar.php?view=year&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024'">
+							</button><button class="right" onclick="window.location.href = 'http://localhost/Vereinskalender/calendar.php?view=year&amp;pointsTableActive=false&amp;day=22&amp;month=07&amp;year=2024'">
 								Jahr
 							</button>
 </div>
@@ -323,7 +160,7 @@
 <button class="drop-btn"><div class="month">Juli</div>
 <div class="year">2024</div></button><div class="dropdown-content" id="dropdown-content">
 <div class="month_btns">
-<button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '01')">Januar</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '02')">Februar</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '03')">März</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '04')">April</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '05')">Mai</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '06')">Juni</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '07')">Juli</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '08')">August</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '09')">September</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '10')">Oktober</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '11')">November</button><button onclick="monthBtnClick('http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false', '12')">Dezember</button>
+<button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '01')">Januar</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '02')">Februar</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '03')">März</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '04')">April</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '05')">Mai</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '06')">Juni</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '07')">Juli</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '08')">August</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '09')">September</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '10')">Oktober</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '11')">November</button><button onclick="monthBtnClick('http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false', '12')">Dezember</button>
 </div>
 <div class="year_input">
 <button class="up" onclick="addToYearInput(1)"></button><input type="text" id="year_input" name="2024"><button class="down" onclick="addToYearInput(-1)"></button>
@@ -331,7 +168,7 @@
 </div>
 </div>
 <div class="arrows-btn option-bar-3">
-<button class="left" id="left_btn" onclick="location.href='http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=01&amp;month=06&amp;year=2024'"></button><button class="today" id="today_btn" onclick="location.href='http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=18&amp;month=07&amp;year=2024'"></button><button class="right" id="right_btn" onclick="location.href='http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=false&amp;day=01&amp;month=08&amp;year=2024'"></button>
+<button class="left" id="left_btn" onclick="location.href='http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false&amp;day=01&amp;month=06&amp;year=2024'"></button><button class="today" id="today_btn" onclick="location.href='http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false&amp;day=22&amp;month=07&amp;year=2024'"></button><button class="right" id="right_btn" onclick="location.href='http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=false&amp;day=01&amp;month=08&amp;year=2024'"></button>
 </div>
 </div>
 <div class="content">
@@ -427,7 +264,7 @@
 </div>
 <div class="day-17 calendar-body  in-month">
 <div class="events"></div>
-<div class="number" id="number_today">18</div>
+<div class="number">18</div>
 </div>
 <div class="day-18 calendar-body  in-month">
 <div class="events"></div>
@@ -443,7 +280,7 @@
 </div>
 <div class="day-21 calendar-body  in-month">
 <div class="events"></div>
-<div class="number">22</div>
+<div class="number" id="number_today">22</div>
 </div>
 <div class="day-22 calendar-body  in-month">
 <div class="events"></div>
@@ -498,7 +335,7 @@
 <div class="number">04</div>
 </div>
 </div>
-<div class="points-table"><div class="points-table-head-bar"><div class="points-table-btn"><button onclick="location.href='http://localhost/WebProjekt/calendar.php?view=month&amp;pointsTableActive=true&amp;day=18&amp;month=07&amp;year=2024'"></button></div></div></div>
+<div class="points-table"><div class="points-table-head-bar"><div class="points-table-btn"><button onclick="location.href='http://localhost/Vereinskalender/calendar.php?view=month&amp;pointsTableActive=true&amp;day=22&amp;month=07&amp;year=2024'"></button></div></div></div>
 </div>
 </div>
 <div class="footer">3

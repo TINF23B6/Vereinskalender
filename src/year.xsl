@@ -239,7 +239,7 @@
 														</div>
 														<div class="points">Ergebnis:</div>
 														<div class="points-input">
-															<input type="number" name="points0">
+															<input type="number" name="points0" min="0" max="99">
 																<xsl:if test="$newEventType = 'match'">
 																	<xsl:attribute name="value">
 																		<xsl:value-of select="calendar/points0"></xsl:value-of>
@@ -247,7 +247,7 @@
 																</xsl:if>
 															</input>
 																:
-															<input type="number" name="points1">
+															<input type="number" name="points1" min="0" max="99">
 																<xsl:if test="$newEventType = 'match'">
 																	<xsl:attribute name="value">
 																		<xsl:value-of select="calendar/points1"></xsl:value-of>
@@ -635,13 +635,13 @@
 													</div>
 													<div class="points">Ergebnis:</div>
 													<div class="points-input">
-														<input type="number" name="points0">
+														<input type="number" name="points0" min="0" max="99">
 															<xsl:attribute name="value">
 																<xsl:value-of select="calendar/points0"></xsl:value-of>
 															</xsl:attribute>
 														</input>
 														:
-														<input type="number" name="points1">
+														<input type="number" name="points1" min="0" max="99">
 															<xsl:attribute name="value">
 																<xsl:value-of select="calendar/points1"></xsl:value-of>
 															</xsl:attribute>

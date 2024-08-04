@@ -29,6 +29,7 @@ input[type="number"] {
 
 input[type="number"] {
   appearance: none;
+  text-align: right;
 }
 
 .layout-body {
