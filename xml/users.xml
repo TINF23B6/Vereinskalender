@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <!DOCTYPE users SYSTEM 'users.dtd'> 
 <users> 
+	<user>
+		<id>2</id>
+		<name>aa</name>
+		<isAdmin>1</isAdmin>
+	</user>
 </users>

@@ -1111,7 +1111,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer">3
+				<div class="footer">Coppyright 2024 Acclaimed Gamers All rights Reserved.
 				</div>
 			</body>
 		</html>

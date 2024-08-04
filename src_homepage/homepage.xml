@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <homepage> 
-	<calendar_path><![CDATA[/calendar.php]]></calendar_path>
+	<calendar_path><![CDATA[http://localhost/Vereinskalender/calendar.php]]></calendar_path>
 </homepage>

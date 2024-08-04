@@ -67,8 +67,9 @@ input[type="number"] {
 
 .footer {
   grid-area: footer;
-
-  align-self: baseline;
+  align-self: center;
+  text-align: center;
+  padding-bottom: 0.05em;
 }
 
 .main {
@@ -1340,6 +1341,7 @@ gap: 0.5em;
   background-color: #FFF;
   border-radius: 200em;
   border: none;
+  background: none;
 
   margin-left: 0.5em;
 
