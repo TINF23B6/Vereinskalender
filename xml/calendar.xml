@@ -2,9 +2,9 @@
 <!DOCTYPE calendar SYSTEM 'calendar_year.dtd'> 
 <calendar> 
 	<failedLogin>false</failedLogin>
-	<userLoggedIn>false</userLoggedIn>
-	<username><![CDATA[]]></username>
-	<isAdmin></isAdmin>
+	<userLoggedIn>true</userLoggedIn>
+	<username><![CDATA[admin]]></username>
+	<isAdmin>true</isAdmin>
 	<dateWrong></dateWrong>
 	<timeWrong></timeWrong>
 	<newEventType></newEventType>

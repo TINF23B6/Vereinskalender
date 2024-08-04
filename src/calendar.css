@@ -391,6 +391,11 @@ input[type="number"] {
   margin-right: 4em;
 }
 
+.popup {
+  overflow: auto;
+  word-break: break-all;
+}
+
 .user-management-btn button,
 .event_popup .popup .edit-btn input,
 .edit-event-form,
