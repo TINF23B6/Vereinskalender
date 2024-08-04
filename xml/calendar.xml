@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE calendar SYSTEM 'calendar_year.dtd'> 
+<!DOCTYPE calendar SYSTEM 'calendar_month.dtd'> 
 <calendar> 
 	<failedLogin>false</failedLogin>
-	<userLoggedIn>true</userLoggedIn>
-	<username><![CDATA[admin]]></username>
-	<isAdmin>true</isAdmin>
+	<userLoggedIn>false</userLoggedIn>
+	<username><![CDATA[]]></username>
+	<isAdmin></isAdmin>
 	<dateWrong></dateWrong>
 	<timeWrong></timeWrong>
 	<newEventType></newEventType>
@@ -25,76 +25,276 @@
 	<info_text><![CDATA[]]></info_text>
 	<notice><![CDATA[]]></notice>
 	<pointsTableActive>false</pointsTableActive>
+	<month>Februar</month>
 	<year>2024</year>
-	<month>
-		<index>1</index>
-		<month_name>Januar</month_name>
-		<date>2024-01-01</date>
-	</month>
-	<month>
-		<index>2</index>
-		<month_name>Februar</month_name>
-		<date>2024-02-01</date>
-	</month>
-	<month>
-		<index>3</index>
-		<month_name>März</month_name>
-		<date>2024-03-01</date>
-	</month>
-	<month>
-		<index>4</index>
-		<month_name>April</month_name>
-		<date>2024-04-01</date>
-	</month>
-	<month>
-		<index>5</index>
-		<month_name>Mai</month_name>
-		<date>2024-05-01</date>
-	</month>
-	<month>
-		<index>6</index>
-		<month_name>Juni</month_name>
-		<date>2024-06-01</date>
-	</month>
-	<month>
-		<index>7</index>
-		<month_name>Juli</month_name>
-		<date>2024-07-01</date>
-	</month>
-	<month>
-		<index>8</index>
-		<month_name>August</month_name>
-		<date>2024-08-01</date>
-	</month>
-	<month>
-		<index>9</index>
-		<month_name>September</month_name>
-		<date>2024-09-01</date>
-	</month>
-	<month>
+	<month_btn>
+		<index>01</index>
+		<name_month>Januar</name_month>
+	</month_btn>
+	<month_btn>
+		<index>02</index>
+		<name_month>Februar</name_month>
+	</month_btn>
+	<month_btn>
+		<index>03</index>
+		<name_month>März</name_month>
+	</month_btn>
+	<month_btn>
+		<index>04</index>
+		<name_month>April</name_month>
+	</month_btn>
+	<month_btn>
+		<index>05</index>
+		<name_month>Mai</name_month>
+	</month_btn>
+	<month_btn>
+		<index>06</index>
+		<name_month>Juni</name_month>
+	</month_btn>
+	<month_btn>
+		<index>07</index>
+		<name_month>Juli</name_month>
+	</month_btn>
+	<month_btn>
+		<index>08</index>
+		<name_month>August</name_month>
+	</month_btn>
+	<month_btn>
+		<index>09</index>
+		<name_month>September</name_month>
+	</month_btn>
+	<month_btn>
 		<index>10</index>
-		<month_name>Oktober</month_name>
-		<date>2024-10-01</date>
-	</month>
-	<month>
+		<name_month>Oktober</name_month>
+	</month_btn>
+	<month_btn>
 		<index>11</index>
-		<month_name>November</month_name>
-		<date>2024-11-01</date>
-	</month>
-	<month>
+		<name_month>November</name_month>
+	</month_btn>
+	<month_btn>
 		<index>12</index>
-		<month_name>Dezember</month_name>
-		<date>2024-12-01</date>
-	</month>
+		<name_month>Dezember</name_month>
+	</month_btn>
 	<home_path><![CDATA[http://localhost/Vereinskalender/home.php]]></home_path>
-	<path_year_btn><![CDATA[http://localhost/Vereinskalender/calendar.php?view=year&pointsTableActive=false]]></path_year_btn>
-	<current_path><![CDATA[http://localhost/Vereinskalender/calendar.php?view=year&pointsTableActive=false&day=04&month=08&year=2024]]></current_path>
-	<new_path_points_table_btn><![CDATA[http://localhost/Vereinskalender/calendar.php?view=year&pointsTableActive=true&day=04&month=08&year=2024]]></new_path_points_table_btn>
-	<path_week><![CDATA[http://localhost/Vereinskalender/calendar.php?view=week&pointsTableActive=false&day=04&month=08&year=2024]]></path_week>
-	<path_year><![CDATA[http://localhost/Vereinskalender/calendar.php?view=year&pointsTableActive=false&day=04&month=08&year=2024]]></path_year>
-	<path_month><![CDATA[http://localhost/Vereinskalender/calendar.php?view=month&pointsTableActive=false&day=04&month=08&year=2024]]></path_month>
-	<new_path_left><![CDATA[http://localhost/Vereinskalender/calendar.php?view=year&pointsTableActive=false&day=01&month=01&year=2023]]></new_path_left>
-	<new_path_today><![CDATA[http://localhost/Vereinskalender/calendar.php?view=year&pointsTableActive=false&day=04&month=08&year=2024]]></new_path_today>
-	<new_path_right><![CDATA[http://localhost/Vereinskalender/calendar.php?view=year&pointsTableActive=false&day=01&month=01&year=2025]]></new_path_right>
+	<path_month_btn><![CDATA[http://localhost/Vereinskalender/calendar.php?view=month&pointsTableActive=false]]></path_month_btn>
+	<current_path><![CDATA[http://localhost/Vereinskalender/calendar.php?view=month&pointsTableActive=false&day=01&month=02&year=2024]]></current_path>
+	<new_path_points_table_btn><![CDATA[http://localhost/Vereinskalender/calendar.php?view=month&pointsTableActive=true&day=01&month=02&year=2024]]></new_path_points_table_btn>
+	<path_week><![CDATA[http://localhost/Vereinskalender/calendar.php?view=week&pointsTableActive=false&day=01&month=02&year=2024]]></path_week>
+	<path_year><![CDATA[http://localhost/Vereinskalender/calendar.php?view=year&pointsTableActive=false&day=01&month=02&year=2024]]></path_year>
+	<path_month><![CDATA[http://localhost/Vereinskalender/calendar.php?view=month&pointsTableActive=false&day=01&month=02&year=2024]]></path_month>
+	<new_path_left><![CDATA[http://localhost/Vereinskalender/calendar.php?view=month&pointsTableActive=false&day=01&month=01&year=2024]]></new_path_left>
+	<new_path_today><![CDATA[http://localhost/Vereinskalender/calendar.php?view=month&pointsTableActive=false&day=04&month=08&year=2024]]></new_path_today>
+	<new_path_right><![CDATA[http://localhost/Vereinskalender/calendar.php?view=month&pointsTableActive=false&day=01&month=03&year=2024]]></new_path_right>
 	<date_today>2024-08-04</date_today>
+	<calendar_size>small</calendar_size> 
+	<day_month> 
+		<number>0</number> 
+		<date>2024-01-29</date> 
+		<day_number>29</day_number> 
+		<in_shown_month> outside-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>1</number> 
+		<date>2024-01-30</date> 
+		<day_number>30</day_number> 
+		<in_shown_month> outside-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>2</number> 
+		<date>2024-01-31</date> 
+		<day_number>31</day_number> 
+		<in_shown_month> outside-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>3</number> 
+		<date>2024-02-01</date> 
+		<day_number>01</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>4</number> 
+		<date>2024-02-02</date> 
+		<day_number>02</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>5</number> 
+		<date>2024-02-03</date> 
+		<day_number>03</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>6</number> 
+		<date>2024-02-04</date> 
+		<day_number>04</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>7</number> 
+		<date>2024-02-05</date> 
+		<day_number>05</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>8</number> 
+		<date>2024-02-06</date> 
+		<day_number>06</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>9</number> 
+		<date>2024-02-07</date> 
+		<day_number>07</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>10</number> 
+		<date>2024-02-08</date> 
+		<day_number>08</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>11</number> 
+		<date>2024-02-09</date> 
+		<day_number>09</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>12</number> 
+		<date>2024-02-10</date> 
+		<day_number>10</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>13</number> 
+		<date>2024-02-11</date> 
+		<day_number>11</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>14</number> 
+		<date>2024-02-12</date> 
+		<day_number>12</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>15</number> 
+		<date>2024-02-13</date> 
+		<day_number>13</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>16</number> 
+		<date>2024-02-14</date> 
+		<day_number>14</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>17</number> 
+		<date>2024-02-15</date> 
+		<day_number>15</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>18</number> 
+		<date>2024-02-16</date> 
+		<day_number>16</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>19</number> 
+		<date>2024-02-17</date> 
+		<day_number>17</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>20</number> 
+		<date>2024-02-18</date> 
+		<day_number>18</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>21</number> 
+		<date>2024-02-19</date> 
+		<day_number>19</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>22</number> 
+		<date>2024-02-20</date> 
+		<day_number>20</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>23</number> 
+		<date>2024-02-21</date> 
+		<day_number>21</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>24</number> 
+		<date>2024-02-22</date> 
+		<day_number>22</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>25</number> 
+		<date>2024-02-23</date> 
+		<day_number>23</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>26</number> 
+		<date>2024-02-24</date> 
+		<day_number>24</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>27</number> 
+		<date>2024-02-25</date> 
+		<day_number>25</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>28</number> 
+		<date>2024-02-26</date> 
+		<day_number>26</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>29</number> 
+		<date>2024-02-27</date> 
+		<day_number>27</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>30</number> 
+		<date>2024-02-28</date> 
+		<day_number>28</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>31</number> 
+		<date>2024-02-29</date> 
+		<day_number>29</day_number> 
+		<in_shown_month> in-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>32</number> 
+		<date>2024-03-01</date> 
+		<day_number>01</day_number> 
+		<in_shown_month> outside-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>33</number> 
+		<date>2024-03-02</date> 
+		<day_number>02</day_number> 
+		<in_shown_month> outside-month</in_shown_month> 
+	</day_month> 
+	<day_month> 
+		<number>34</number> 
+		<date>2024-03-03</date> 
+		<day_number>03</day_number> 
+		<in_shown_month> outside-month</in_shown_month> 
+	</day_month> 
 </calendar>

@@ -725,12 +725,9 @@
 						</div>
 						<div class="date-btn option-bar-2" id="date-btn">
 							<button class="drop-btn">
-								<div class="month">
-									<xsl:value-of select="document('../xml/calendar.xml')/calendar/month"></xsl:value-of>
-								</div>
-								<div class="year">
-									<xsl:value-of select="document('../xml/calendar.xml')/calendar/year"></xsl:value-of>
-								</div>
+								<xsl:value-of select="document('../xml/calendar.xml')/calendar/month"></xsl:value-of>	
+								<xsl:text> </xsl:text>				
+								<xsl:value-of select="document('../xml/calendar.xml')/calendar/year"></xsl:value-of>							
 							</button>
 							<div class="dropdown-content" id="dropdown-content">
 								<div class="month_btns">

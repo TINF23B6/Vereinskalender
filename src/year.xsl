@@ -725,9 +725,7 @@
 						</div>
 						<div class="date-btn option-bar-2" id="date-btn">
 							<button class="drop-btn drop-btn-year">
-								<div>
-									<xsl:value-of select="document('../xml/calendar.xml')/calendar/year"></xsl:value-of>
-								</div>
+								<xsl:value-of select="document('../xml/calendar.xml')/calendar/year"></xsl:value-of>
 							</button>
 							<div class="dropdown-content" id="dropdown-content">
 								<div class="submit-btn-structure">
@@ -807,24 +805,16 @@
 											<xsl:value-of select="substring(date, 1, 7)"/>
 										</xsl:variable>
 										<xsl:for-each select="document('../xml/events.xml')/events/event[substring(date, 1, 7) = $currentMonth]">
-											<button class="event_btn">
+											<button class="event_btn text">
 												<xsl:attribute name="onclick">
 													<xsl:text>showPopup('p</xsl:text>
 													<xsl:value-of select="index"></xsl:value-of>
 													<xsl:text>')</xsl:text>
 												</xsl:attribute>
-												<div class="text">
-													<div class="name">
-														<xsl:value-of select="name"></xsl:value-of>
-													</div>
-													<div class="date">
-														<xsl:text> - </xsl:text>
-														<div class="date-number">
-															<xsl:value-of select="substring(date, string-length(date) - 1)"/>
-														</div>
-														<xsl:text>.</xsl:text>
-													</div>
-												</div>
+												<xsl:value-of select="name"></xsl:value-of>
+												<xsl:text disable-output-escaping="yes"> - </xsl:text>
+												<xsl:value-of select="substring(date, string-length(date) - 1)" disable-output-escaping="yes"/>
+												<xsl:text disable-output-escaping="yes">.</xsl:text>
 											</button>
 											<div class="event_popup">
 												<xsl:attribute name="id">
